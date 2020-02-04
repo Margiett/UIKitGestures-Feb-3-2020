@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Gesture Controller-->
+        <scene sceneID="ubV-3n-AVX">
+            <objects>
+                <viewController storyboardIdentifier="TabGestureController" id="3NA-gh-RAt" customClass="TabGestureController" customModule="UIKitGestures_Feb_3_2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72w-BK-q8E">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nuz-9t-gH8">
+                                <rect key="frame" x="103.5" y="346" width="207" height="204.5"/>
+                                <color key="tintColor" red="1" green="0.42150772110000001" blue="0.78675535720000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nuz-9t-gH8" secondAttribute="height" multiplier="1:1" id="n4u-5G-ex5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nuz-9t-gH8" firstAttribute="centerY" secondItem="72w-BK-q8E" secondAttribute="centerY" id="GS7-y7-KsT"/>
+                            <constraint firstItem="Nuz-9t-gH8" firstAttribute="width" secondItem="72w-BK-q8E" secondAttribute="width" multiplier="0.5" id="Ib7-dQ-suX"/>
+                            <constraint firstItem="Nuz-9t-gH8" firstAttribute="centerX" secondItem="72w-BK-q8E" secondAttribute="centerX" id="VRh-Z2-RQO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tFS-Wv-pRS"/>
+                    </view>
+                    <connections>
+                        <outlet property="heartImageView" destination="Nuz-9t-gH8" id="FH6-Qm-dbn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxu-Ze-Cgk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+    </resources>
+</document>
